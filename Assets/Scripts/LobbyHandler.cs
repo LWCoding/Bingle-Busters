@@ -6,18 +6,13 @@ using UnityEngine.UI;
 using TMPro;
 using ExitGames.Client.Photon;
 using Photon.Pun;
-
-using Hashtable = ExitGames.Client.Photon.Hashtable;
+using Photon.Realtime;
 
 public class LobbyHandler : MonoBehaviourPunCallbacks
 {
 
     [Header("UI Assignments")]
     public TMP_InputField roomCodeInput;
-
-    private void Start()
-    {
-    }
 
     public void JoinRoom()
     {

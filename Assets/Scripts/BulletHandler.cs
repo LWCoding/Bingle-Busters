@@ -23,6 +23,11 @@ public class BulletHandler : MonoBehaviour
         {
             StartCoroutine(FireBulletCoroutine(++ticksRendered));
         }
+        else
+        {
+            // If the bullet hasn't been destroyed by now, destroy the bullet.
+            Destroy(gameObject, 0.01f);
+        }
     }
 
     // When this bullet collides, destroy it.
